@@ -14,18 +14,45 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #30353f;
+  min-height: 70vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  font-weight: bolder;
+  color: rgb(197, 197, 203);
+}
+
+.underline {
+  text-decoration: underline;
 }
 
 .App-link {
   color: #61dafb;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Four columns with equal width */
+  gap: 20px; /* Gap between grid items */
+}
+
+.header-card {
+  padding: 10px; /* Padding around the team card content */
+  margin: 10px; /* Margin between team cards */
+  background-color: rgba(81, 101, 109, 0.01);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3); /* Horizontal offset, vertical offset, blur radius, and color */
+  border-radius: 20px; /* Border radius to create rounded corners */
+}
+
+.team-card {
+  padding: 10px; /* Padding around the team card content */
+  margin: 10px; /* Margin between team cards */
+  background-color: #ebf2f5;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3); /* Horizontal offset, vertical offset, blur radius, and color */
+  border-radius: 20px; /* Border radius to create rounded corners */
 }
 
 @keyframes App-logo-spin {
