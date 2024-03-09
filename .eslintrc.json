@@ -1,9 +1,13 @@
 {
+  // Extend the eslint configuration to include react-app and prettier
   "extends": ["react-app", "plugin:prettier/recommended"],
+  // Define ESLint rules
   "rules": {
+    // Enforce prettier formatting rules
     "prettier/prettier": [
       "error",
       {
+        // Use automatic end of line (LF for Unix and CRLF for Windows)
         "endOfLine": "auto"
       }
     ]
