@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css';
-import TeamCard from './TeamCard';
 import teamData from './CollegeBasketballTeams.json'; // Import JSON data
 
 // Header function to render the header section
@@ -21,6 +20,29 @@ function Header() {
   );
 }
 
+// Define props interface for TeamCard component
+interface TeamCardProps {
+  schoolName: string; // School name prop
+  mascotName: string; // Mascot name prop
+  location: string; // Location prop
+}
+
+// TeamCard component to render information about a basketball team
+function TeamCard({ schoolName, mascotName, location }: TeamCardProps) {
+  return (
+    <div className="team-card">
+      {/* Container for team information */}
+      <div className="team-info">
+        {/* Heading with school name */}
+        <h2>{schoolName}</h2>
+        {/* Paragraph showing mascot name */}
+        <p>Mascot: {mascotName}</p>
+        {/* Paragraph showing location */}
+        <p>Location: {location}</p>
+      </div>
+    </div>
+  );
+}
 // TeamList function to render the list of teams
 function TeamList() {
   return (
